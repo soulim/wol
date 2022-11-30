@@ -1,9 +1,11 @@
-# Wake on LAN (WOL)
+# Wake-on-LAN (WOL)
 
-WOL or simply `wol` is a command-line tool that allows to send
-a [Wake-on-LAN][wol] signal and wake up or boot a machine. Yes, I do
-know similar tools exist already. It's just yet another opportunity for me
-to practice Go and I want to use it.
+WOL or better `wol` is a command-line tool that allows
+a computer to be turned on or awakened by a network message.
+See [Wake-on-LAN on Wikipedia][wol].
+
+NOTE: Yes, I do know similar tools exist already. It's just yet another
+opportunity for me to practice Go and I want to use it.
 
 ## Background
 
