@@ -11,7 +11,7 @@ import (
 var ports = []int{7, 9}
 
 func constructMagicPacket(macAddress net.HardwareAddr) []byte {
-	magic := append([]byte{0xff, 0xff, 0xff, 0xff, 0xff, 0xff})
+	magic := []byte{0xff, 0xff, 0xff, 0xff, 0xff, 0xff}
 	for i := 0; i < 16; i++ {
 		magic = append(magic, macAddress...)
 	}
