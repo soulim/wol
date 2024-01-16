@@ -1,0 +1,10 @@
+# IDE-specific files
+.idea/
+.vscode/
+
+# Log files and runtime profiling data
+*.log
+*.prof
+
+# Binary
+/bin/
