@@ -7,6 +7,7 @@ import (
 	"sync"
 )
 
+// Common wake on lan ports
 var ports = []int{7, 9}
 
 func constructMagicPacket(macAddress net.HardwareAddr) []byte {
@@ -21,6 +22,7 @@ func sendMagicPacket(port int, magic []byte, wg *sync.WaitGroup, errChan chan<- 
 	defer wg.Done()
 
 	conn, err := net.DialUDP("udp", nil, &net.UDPAddr{
+		// Broadcast ip
 		IP:   net.IPv4(255, 255, 255, 255),
 		Port: port,
 	})
